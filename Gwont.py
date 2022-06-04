@@ -105,7 +105,7 @@ async def on_ready():
 @client.command()
 async def info(ctx):
     embed = Embed(title="Gwont Super Lazy Bot", description="Developed by Ashley/Vith! To request a new feature just DM them :)", color=0x042069)
-    embed.add_field(name="GitHub Link", value="<link>", inline=False)
+    embed.add_field(name="GitHub Link", value="https://github.com/Vithraldor/Gwont-Super-Lazy-Bot", inline=False)
     embed.add_field(name="Gwent Lazy Bot", value="Based off of the Gwent Lazy Bot: https://github.com/MasterAbdoTGM50/gwent-lazy-bot", inline=False)
     await ctx.send(embed=embed)
 
@@ -190,4 +190,4 @@ async def on_message(message):
         await message.channel.send(embed=buildCard(embed, knickersCard, "https://gwent.one/img/assets/medium/art/1684.jpg"))
 
 
-client.run('OTgxNzEwMTM2NDU4NDg1ODQw.GgJFqj.mkG8XGx9KQ7T4T8-01nqGDLQLmfnSSItIl7IbI')
+client.run('')

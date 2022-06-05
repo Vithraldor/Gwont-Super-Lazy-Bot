@@ -144,7 +144,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if str.lower(message.content) == "[gayass]": 
+    if str.lower(message.content) == "[broken elf]": 
         # This activates Gezras' description
         gezrasCard = CardInfo("Scoia'tael", '', 'Legendary', 'Gezras of Leyda - Witcher', 'https://gwent.one/en/card/202801')
         
@@ -154,7 +154,7 @@ async def on_message(message):
         provPower = "Provision: 12\nPower: 5"
         gezrasCard.changeProvPower(provPower)
 
-        flavourText = "“Take a contract from Aen Seidhe over a dh'oine any day, as you’re far less likely to receive a knife between the ribs in place of coin.” ⁠— Gezras\n\n“gezras more like gayass” ⁠— Catherine"
+        flavourText = "“Take a contract from Aen Seidhe over a dh'oine any day, as you’re far less likely to receive a knife between the ribs in place of coin.” ⁠— Gezras"
         gezrasCard.changeFlavourText(flavourText)
 
         await message.channel.send(embed=buildCard(embed, gezrasCard, "https://gwent.one/img/assets/medium/art/2335.jpg"))
@@ -169,7 +169,7 @@ async def on_message(message):
         provPower = "Provision: 7\nPower: 3"
         haraldCard.changeProvPower(provPower)
 
-        flavourText = "The last occasion Harald's grim countenance betrayed a smile was in 1211 when Brouver Hoog drunkenly ate five bowls of goat and cabbage stew then promptly shat his trousers.\n\n“CAROLD IS BACK” ⁠— Josh"
+        flavourText = "The last occasion Harald's grim countenance betrayed a smile was in 1211 when Brouver Hoog drunkenly ate five bowls of goat and cabbage stew then promptly shat his trousers."
         haraldCard.changeFlavourText(flavourText)
 
         await message.channel.send(embed=buildCard(embed, haraldCard, "https://gwent.one/img/assets/medium/art/1873.jpg"))

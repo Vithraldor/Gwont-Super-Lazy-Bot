@@ -4,7 +4,9 @@ from discord.ext import commands
 import asyncio
 import random
 
-client = commands.Bot(command_prefix = 'gw!')
+intents = discord.Intents.default()
+intents.message_content = True
+client = commands.Bot(command_prefix = 'gw!', intents=intents)
 
 '''
 Everything is hard coded and extremely messy because I'm lazy. This is basically just Gwent Lazy Bot but reworked so I can meme with my friends lol.
@@ -174,7 +176,7 @@ async def on_message(message):
 
         await message.channel.send(embed=buildCard(embed, haraldCard, "https://gwent.one/img/assets/medium/art/1873.jpg"))
 
-    elif str.lower(message.content) == "[best]" or str.lower(message.content) == "[best]":
+    elif str.lower(message.content) == "[best]":
         # This activates Knickers' description
         knickersCard = CardInfo("Neutral", '', 'Legendary', 'Knickers - Beast, Bandit', 'https://gwent.one/en/card/202397')
 
